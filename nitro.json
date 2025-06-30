@@ -1,0 +1,16 @@
+{
+  "date": "2025-06-25T19:09:52.664Z",
+  "preset": "azion",
+  "framework": {
+    "name": "nitro",
+    "version": ""
+  },
+  "versions": {
+    "nitro": "2.11.12"
+  },
+  "commands": {
+    "preview": "ef dev",
+    "deploy": "ef build"
+  },
+  "config": {}
+}
