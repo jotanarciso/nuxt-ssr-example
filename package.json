@@ -3,7 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build && npm run copy:static && npm run copy:public",
+    "clear:azion": "rm -rf .edge && mkdir -p .edge/storage",
+    "copy:static": "npm run clear:azion && mv ./.output/public/_nuxt .edge/storage/_nuxt",
+    "copy:public": "mv ./.output/public/* .edge/storage",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
